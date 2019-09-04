@@ -76,14 +76,6 @@ gulp package-solution --ship
 1. Upload the `react-application-injectcss.sppkg` from the `sharepoint` folder to your App catalog.
 2. When prompted to deploy to all sites, choose the option that suits your needs.
 
-### Automated deployment
-
-1. If you have not done so already, install the [PnP PowerShell Cmdlets](https://aka.ms/sppnp-powershell)
-2. Edit the `DeployApplicationCustomizer.ps1` file and change the `$tenantUrl` variable to point to your tenant.
-3. From a PowerShell console, run the `DeployApplicationCustomizer.ps1` script to automatically deploy to all sites.
-4. You will be prompted to enter your credentials.
-5. After providing your credentials, the extension will be deployed
-
 ## Changing the CSS location
 
 To simplify deployment, the extension looks for a `custom.css` in your tenant's root `Style Library`. If you wish to use a different CSS name and location, use one of the following approaches:
@@ -100,26 +92,6 @@ Note that if you intend to deploy this extension tenant-wide, your custom CSS UR
 4. Run `gulp package-solution --ship`
 5. Upload the `react-application-injectcss.sppkg` from the `sharepoint` folder to your App catalog.
 6. When prompted to deploy to all sites, choose the option that suits your needs.
-
-### Using automated deployment
-
-This approach allows you to override the CSS location by configuring the extension properties as the extension is activated.
-
-1. Edit the `EnableApplicationCustomizer.ps1` file and change the `$tenantUrl` variable to point to your tenant.
-2. In the same file, change the `$customCSSUrl` variable to point to your custom CSS URL.
-3. From a PowerShell console, run the `EnableApplicationCustomizer.ps1` script to automatically deploy to all sites.
-4. You will be prompted to enter your credentials.
-5. After providing your credentials, the extension will be deployed using your custom CSS URL.
-
-## Disabling the extension
-
-1. Edit the `DisableApplicationCustomizer.ps1` file and change the `$tenantUrl` variable to point to your tenant.
-2. From a PowerShell console, run the `DisableApplicationCustomizer.ps1` script to automatically deploy to all sites.
-3. You will be prompted to enter your credentials.
-4. If prompted to remove the application, choose Yes.
-5. The extension will be removed.
-
-If you wish to do so, you can remove the solution package from your tenant's app catalog after the extension has been de-activated.
 
 ## Features
 
