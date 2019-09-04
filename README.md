@@ -18,7 +18,7 @@ Please refrain from making drastic changes that may negatively impact your users
 
 ## Used SharePoint Framework Version
 
-![SPFx v1.8](https://img.shields.io/badge/SPFx-1.8-green.svg)
+![SPFx v1.9.1](https://img.shields.io/badge/SPFx-1.9.1-green.svg)
 
 ## Applies to
 
@@ -38,6 +38,7 @@ Version|Date|Comments
 1.0.0|07 May, 2018|Initial release
 1.1.0|18 October, 2018|Updated to SPFx 1.6
 1.2.0|28 March, 2018|Updated to SPFx 1.8
+1.3.0|4 Sept, 2019|Updated to SPFx 1.9.1
 
 ## Disclaimer
 
